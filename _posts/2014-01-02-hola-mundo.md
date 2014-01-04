@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bienvenido  al blog de OPI
-category: Coding
+category: People
 tagline: Supporting hola a todos
 tags: 
   - public
