@@ -4,10 +4,10 @@ title: Bienvenido  al blog de OPI
 category: Coding
 tagline: Supporting hola a todos
 tags: 
-  - Public
-  - Policies
-  - Empowering
-  - People
+  - public
+  - policies
+  - empowering
+  - people
 year: 2012
 month: 7
 day: 17
