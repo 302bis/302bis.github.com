@@ -2,7 +2,8 @@
 layout: post
 title: How to sign third party assemblies without compiling
 category: Coding
-tags: dotnet 
+tagline: "Supporting hola a todos"
+tags: [intro, beginner, jekyll, tutorial]
 year: 2012
 month: 7
 day: 17
