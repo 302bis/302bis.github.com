@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Hello World"
+title: "hola mundo"
 description: ""
 category: ""
 tags: []
 ---
 {% include JB/setup %}
+Hola mundo, como estas?
