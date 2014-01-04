@@ -10,6 +10,7 @@ pygments: true
 #
 title : OPI-Blog
 tagline: We rebuild trust between citizens and goverments.
+logo: logo.png
 author :
   name : OPI-Open Intelligence
   email : opi@opi.la
