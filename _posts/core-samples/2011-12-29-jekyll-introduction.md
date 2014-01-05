@@ -1,8 +1,19 @@
 ---
 layout: post
+title: Jekyll Introduction
 category : lessons
 tagline: "Supporting hola a todos"
-tags : [intro, beginner, jekyll, tutorial]
+tags: 
+  - public
+  - policies
+  - empowering
+  - people
+year: 2012
+month: 7
+day: 17
+published: true
+summary: This Jekyll introduction will outline specifically what Jekyll is and why you would want to use it. Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
+image: post_three.jpg
 ---
 {% include JB/setup %}
 

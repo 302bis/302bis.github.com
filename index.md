@@ -5,18 +5,18 @@ tagline: WE REBUILD TRUST BETWEEN CITIZENS AND GOVERMENTS
 ---
 {% include JB/setup %}
 
-<ul class="posts">
+<div class="posts">
   {% for post in site.posts %}
-<li>
+
 <div class="">
   <div class="">    
-    <div class="">
-      <div class="">
+    <div class="row">
+      <div class="col-lg-4">
         <a href="{{ post.url }}" >
             <img border="0" width="250" height="150" src="/img/posts/{{ post.image }}" alt="">
         </a>
       </div>
-      <div class="">
+      <div class="col-lg-8 ">
                 <h4><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h4>      
         <p>
           {{ post.summary }}
@@ -30,6 +30,5 @@ tagline: WE REBUILD TRUST BETWEEN CITIZENS AND GOVERMENTS
         <hr>
   </div>
 </div>
-</li>
   {% endfor %}
-</ul>
+</div>
