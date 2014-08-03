@@ -1,7 +1,7 @@
 ---
 layout: page
-title: OPI OPEN INTELLIGENCE
-tagline: WE REBUILD TRUST BETWEEN CITIZENS AND GOVERMENTS
+title: 302bis
+tagline: Freelance Web Designer. I like to create websites prioritizing usability and minimalism.
 ---
 {% include JB/setup %}
 
