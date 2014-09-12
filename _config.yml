@@ -8,16 +8,15 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : OPI-Blog
-tagline: We rebuild trust between citizens and goverments.
+title : 302bis
+tagline: UX/UI design.
 logo: logo.png
 author :
-  name : OPI-Open Intelligence
-  email : opi@opi.la
-  github : opintel
-  twitter : opi_global
-  linkedin : 3087607?trk=tyah&trkInfo=tas%3Aopi%3A%20open%20inte%2Cidx%3A1-1-1
-  feedburner : opintel
+  name : Patricio Bustos
+  email : achalay@gmail.com 
+  github : 302bis
+  twitter : 302bis.net
+  linkedin : 302bis
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -27,7 +26,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://opintel.github.io
+production_url : http://302bis.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -84,13 +83,13 @@ JB :
   comments :
     provider : facebook
     disqus :
-      short_name : opi-blog
+      short_name : 302bis
     livefyre :
       site_id : 123
     intensedebate :
       account : 123abc
     facebook :
-      appid : 596318257076912
+      appid : 5963182570769120000
       num_posts: 5
       width: 580
       colorscheme: light
@@ -102,7 +101,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-45955601-2'
+        tracking_id : 'UA-12287253-7'
     getclicky :
       site_id : 
     mixpanel :
