@@ -21,7 +21,7 @@
 </div>
 <div id="page" class="container">
 	<div  class="row row-offcanvas row-offcanvas-right" role="main">
-		
+
 		<div class="col-xs-12 col-sm-9">
 			<div class="unit-inner unit-body-inner">
 				<div class="entry-content">
@@ -31,18 +31,18 @@
 		</div><!-- unit-body -->
 		<div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
 				<div class="list-group">
-					
+
 						<div class="list-group-item"><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></span></div>
 						<div class="list-group-item"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></div>
 						<div class="list-group-item"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></div>
-						<div class="list-group-item"><a href="http://www.linkedin.com/company/{{ site.author.linkedin }}/" rel="me">linkedin.com/302bis</a></div>					
+						<div class="list-group-item"><a href="http://www.linkedin.com/company/{{ site.author.linkedin }}/" rel="me">linkedin.com/302bis</a></div>
 				</div>
 		</div>
 	</div><!-- body -->
 
 <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-        
+
         </p>
 
       </footer>
@@ -63,7 +63,13 @@
 /*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
 (function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
 </script>
-  
+
   {% include JB/analytics %}
+	<script>
+  window.intercomSettings = {
+    app_id: "xr0x0a3z"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/xr0x0a3z';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 </body>
 </html>
