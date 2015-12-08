@@ -5,9 +5,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
 .bg-loco{
-    color: #444;
-    background-color: transparent;
-    border-bottom: 1px solid #777;
+  color: #444;
+  background-color: #fff;
+  border-bottom: 1px solid #777;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 .body{
   font-family: 'Open Sans'
@@ -29,8 +32,15 @@ p{
 }
 .list-group.lista{
   position: fixed;
+  margin-top: 333px;
 }
 .list-group.lista a{
   font-family: 'Oswald';
   color: #999;
+}
+h1 span{
+  color: red;
+}
+.unit-inner{
+    margin-top: 333px;
 }
