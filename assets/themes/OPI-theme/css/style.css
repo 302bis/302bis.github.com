@@ -9,7 +9,6 @@
   background-color: #fff;
   border-bottom: 1px solid #777;
   width: 100%;
-  position: fixed;
   z-index: 1;
 }
 .body{
@@ -32,7 +31,6 @@ p{
 }
 .list-group.lista{
   position: fixed;
-  margin-top: 333px;
 }
 .list-group.lista a{
   font-family: 'Oswald';
@@ -40,7 +38,4 @@ p{
 }
 h1 span{
   color: red;
-}
-.unit-inner{
-    margin-top: 333px;
 }
