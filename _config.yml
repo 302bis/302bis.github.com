@@ -2,7 +2,7 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "_posts/core-samples",]
 pygments: true
 
 # Themes are encouraged to use these universal variables
@@ -71,6 +71,7 @@ JB :
   # Some JB helpers refer to these paths; change them here if needed.
   #
   archive_path: /archive.html
+  list_path: /list.html
   categories_path : /categories.html
   tags_path : /tags.html
   atom_path : /atom.xml
