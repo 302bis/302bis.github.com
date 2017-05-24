@@ -6,26 +6,26 @@
     <meta charset="UTF-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
 <html ng-app="portfolio">
-            <br>
-        <br>
-    <div class="well">
+    <div class="animated fadeInDown well fondo-ghost">
+        <br><br>
         <div class="container">
-            <h1 class="title-uno titles">Patricio Bustos</h1>
-            <h1 class="title-dos titles">UX designer <b>/</b> UI Developer</h1>
-            <h1 class="title-tres titles">Based on México City</h1>
+            <h1 class="animated delay-uno fadeIn title-uno titles">Patricio Bustos</h1>
+            <h1 class="animated delay-dos fadeIn title-dos titles">UX designer <b>/</b> UI Developer</h1>
+            <h1 class="title-tres titles animated delay-tres fadeIn">Based on México City</h1>
         </div>
-
+<br>    <br>
     </div>
 
-<div class="container" id="tourpackages-carousel">
-      <h2 class="title2 title-dos">Last projects</h2>
+    <div class="container" id="tourpackages-carousel">
+      <h2 class="title2 animated delay-cinco fadeInDown">Last projects</h2>
       <br>
-      <div class="row" ng-controller="portfolioCtrl">
+      <div class="row animated delay-cuatro fadeInUp" ng-controller="portfolioCtrl">
 
-        <div  ng-repeat="project in behance | limitTo:12" class="col-xs-18 col-sm-6 col-md-4">
+        <div  ng-repeat="project in behance | limitTo:6" class="col-xs-18 col-sm-6 col-md-4">
           <div class="thumbnail">
               <div class="image-portfolio">
                 <a target="_blank" href="{{ project.url }}">
@@ -35,7 +35,7 @@
 
               <div class="caption">
                 <h4>{{ project.name }}</h4>
-                <p>{{ project.fields[0] }}</p>
+                <p>{{ project.fields[0] }}, {{ project.fields[1] }}, {{ project.fields[2] }}</p>
                 <p><a href="{{ project.url }}" target="_blank" class="btn btn-info btn-xs" role="button">View project</a></p>
             </div>
           </div>
