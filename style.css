@@ -42,20 +42,20 @@ h1 b{
     font-weight: 400;
 }
 .delay-uno {
-  animation-delay: 1s !important;
+  animation-delay: 1.5s !important;
 }
 .delay-dos {
-  animation-delay: 1.3s !important;
+  animation-delay: 1.8s !important;
 }
 .delay-tres {
-  animation-delay: 1.6s !important;
+  animation-delay: 2.1s !important;
 }
 .delay-cuatro {
-  animation-delay: 1.9s !important;
+  animation-delay: 2.5s !important;
 }
 .delay-cinco {
-  animation-delay: 2.2s !important;
+  animation-delay: 2.9s !important;
 }
 .fondo-ghost{
-    animation-delay: 0.3s !important;
+    animation-delay: 0.5s !important;
 }
