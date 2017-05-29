@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pato.design</title>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<html ng-app="portfolio">
+<body>
+
+    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    <div class="animated fadeInDown well fondo-ghost">
+        <br><br>
+        <div class="container">
+            <h1 class="animated delay-uno fadeIn title-uno titles">Patricio Bustos</h1>
+            <h1 class="animated delay-dos fadeIn title-dos titles">UX designer <b>/</b> UI Developer</h1>
+            <h1 class="title-tres titles animated delay-tres fadeIn">Based on México City</h1>
+        </div>
+<br>    <br>
+    </div>
+
+    <div class="container" id="tourpackages-carousel">
+      <h2 class="title2 animated delay-cinco fadeInDown">Last projects</h2>
+      <br>
+      <div class="row animated delay-cuatro fadeInUp" ng-controller="portfolioCtrl">
+
+        <div  ng-repeat="project in behance | limitTo:6" class="col-xs-18 col-sm-6 col-md-4">
+          <div class="thumbnail">
+              <div class="image-portfolio">
+                <a target="_blank" href="{{ project.url }}">
+                    <img ng-src="{{ project.covers.original }}" alt="{{ project.name }}">
+                </a>
+              </div>
+
+              <div class="caption">
+                <h4>{{ project.name }}</h4>
+                <p>{{ project.fields[0] }}, {{ project.fields[1] }}, {{ project.fields[2] }}</p>
+                <p><a href="{{ project.url }}" target="_blank" class="btn btn-info btn-xs" role="button">View project</a></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- End row -->
+      
+    </div><!-- End container -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    var app = angular.module('portfolio', []);
+        app.controller('portfolioCtrl', function($scope, portfolioFactory) {
+            portfolioFactory.getBehance().then(function onFulfilled(data){
+                $scope.behance = data;
+                $scope.behanceLoaded = true;
+            }).catch(function onRejected() {
+                console.log('Error in Behance Factory');
+            });
+        });
+
+        app.factory('portfolioFactory', function($http) {  
+            var getBehance = function() {
+                var user = '302bis';
+                var apiKey = 'Hm5zPFZIvedf9oxj02P9wj1Jplne5U2J';
+                return $http.jsonp('https://behance.net/v2/users/'+ user +'/projects?api_key='+ apiKey + '&callback=JSON_CALLBACK').then(function onFulfilled(response) {
+                    return response.data.projects;
+                });
+            };
+            return { 
+                getBehance: getBehance
+            };
+        });
+
+        app.controller('ctrlInto', ['$scope', '$http', function($scope, $http) {
+
+            $scope.clickButton = function() {
+                $http.get('test.json').success(function(data) {
+                    $scope.message = data.msg;
+                });
+            }
+           }]);
+</script>
+</body>
+</html>
