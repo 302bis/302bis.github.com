@@ -10,7 +10,7 @@ h1{
     font-family: 'Roboto Condensed', sans-serif !important;
 }
 h1 b{
-    color:#000;
+    color:#ff0000;
     font-size: 105px;
 }
 h2{
@@ -78,7 +78,7 @@ h2{
     margin-top:20px;
 }
 .icons-social a{
-    /*color:#fafafa;*/
+    color:#999;
 }
 .icons-social a:hover,
 .icons-social a:focus{
@@ -111,4 +111,18 @@ h2{
     outline: 0;
     -webkit-box-shadow:none !important;
     box-shadow: none !important;
+}
+.modal-header {
+    background: #555;
+    color: #fafafa;
+}
+.modal .modal-footer {
+    background-color: #555;
+}
+.modal .modal-close {
+    cursor: pointer;
+    color: #fafafa;
+}
+.modal.modal-fixed-footer .modal-footer {
+    bottom:-2px;
 }
