@@ -54,31 +54,32 @@
 					</li>
 				</ul>
 				<div class="clearfix"></div>
+
+<br>    <br>
 				<p id="about-me">
-{{data.user.sections['About Me']}}
+					{{data.user.sections['About Me']}}
 				</p>
-
-
 
 
 		</div>
 
-<br>    <br>
+
     </div>
 
 
 
 
 
-	<main class="main" ng-controller="controllerProject">
 
+	<main class="main" ng-controller="controllerProject">
+		
 		<div class="container top-container-main">
 
-
+			<h2 class="animated fadeInUp">Last projects</h2>		
 			<div class="row card-open">
 
 				<!-- Cards -->
-				<div data-ng-repeat="project in projects" class="col-xs-6 col-sm-4 col-md-4 col-lg-3 card-custom" ng-click="selectProject(project.id)">
+				<div data-ng-repeat="project in projects | limitTo:8" class="animated fadeInUp col-xs-6 col-sm-4 col-md-4 col-lg-3 card-custom" ng-click="selectProject(project.id)">
 
 					<div class="card transitions">
 						<div class="">
