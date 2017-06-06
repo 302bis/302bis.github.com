@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=latin-ext');
+body {
+
+    color: #555 !important;
+}
 h1{
     font-size: 84px !important;
     font-weight: 400 !important;
@@ -15,22 +19,23 @@ h2{
 }
 .well{
     border: none;
-    background: red !important;
+    background: transparent !important;
+    border-bottom: none !important;
+    /*background: red !important;*/
 }
 .well p{
-    color: #fafafa;
     font-size: 16px;
 }
 .title-uno{
-    color: #fafafa !important;
+    /*color: #fafafa !important;*/
     font-size: 110px !important;
 }
-.title-dos{
+/*.title-dos{
     color: #fafafa ;
 }
 .title-tres{
     color: #fafafa;
-}
+}*/
 .thumbnail {
     position: relative;
     padding: 0px;
@@ -73,22 +78,21 @@ h2{
     margin-top:20px;
 }
 .icons-social a{
-    color:#fafafa;
+    /*color:#fafafa;*/
 }
 .icons-social a:hover,
 .icons-social a:focus{
-    color:#eaeaea;
+    /*color:#eaeaea;*/
 }
 .btn-well{
-    background:#ff0000;
-    border:1px solid #fafafa !important;
-    margin: 28px 0 0 20px;
-    box-shadow: none;
+    background:#fafafa;
+    border:1px solid #cdcdcd !important;
+    margin: 30px 0 0 20px;
+    color: #555
 }
 .btn-well:hover{
-    background:#ee6e73;
-    border:1px solid #fafafa !important;
-    color:#fafafa !important;
+    background:#efefef;
+    color: #555 !important;
 }
 #about-me{
     display: none;
