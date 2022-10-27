@@ -68,77 +68,11 @@ I'm a Buddhist, Vegan, Dadaist, Stridentist, UXC (on NN / g), and everything els
 
 
 
-	<main class="main" ng-controller="controllerProject">
+	<main class="main">
 		
 		<div class="container top-container-main">
-
-			<h2 class="animated fadeInUp">Last projects</h2>		
-			<div class="row card-open">
-
-				<!-- Cards -->
-				<div data-ng-repeat="project in projects | limitTo:8" class="animated fadeInUp col-xs-6 col-sm-4 col-md-4 col-lg-3 card-custom" ng-click="selectProject(project.id)">
-
-					<div class="card transitions">
-						<div class="">
-							<img class="img-card" src="{{project.covers[404]}}">
-						</div>
-						<div class="card-content">
-							<p>{{project.name}}</p>
-						</div>
-						<div class="clearfix"></div>
-						<div class="card-action">
-							<a><i class="icon-eye"></i>{{project.stats.views}}</a>
-							<a><i class="icon-heart-filled"></i>{{project.stats.appreciations}}</a>
-							<a><i class="icon-comment-1"></i>{{project.stats.comments}}</a>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
+		<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlDQDFV518MDrIc1wlysB8t%2FPorfolio-base%3Fpage-id%3D985%253A522%26node-id%3D985%253A523%26viewport%3D1029%252C1702%252C0.33%26scaling%3Dmin-zoom%26starting-point-node-id%3D985%253A523" allowfullscreen></iframe>
 		</div>
-
-		<!-- Modal -->
-		<div id="modal1" class="modal modal-fixed-footer">
-			<div class="modal-header">
-				<h2>{{dataProject.project.name}} 
-					<!--<a ng-show="commentsProject.comments != ''" class="anchor" href="#collection">
-						<i class="icon-comment-1"></i>
-					</a> -->
-				</h2>
-				<ul class="fields">
-					<li data-ng-repeat="field in dataProject.project.fields"><span>{{field}}</span></li>
-				</ul>
-			</div>
-
-			<div class="modal-content" ng-show="modalContent" style="height: calc(100% - 143px); background-color: #{{dataProject.project.styles.background.color}};">
-				<div class="content-project row" style="background-repeat: {{dataProject.project.styles.background.image.repeat}}; background-image: url('{{dataProject.project.styles.background.image.url}}'); background-position: {{dataProject.project.styles.background.image.position}};">
-					<div class="panel-body">
-						<div data-ng-repeat="module in dataProject.project.modules">
-							<div ng-if="module.text" ng-bind-html="module.text | html"></div>
-							<div ng-if="module.sizes" class="center">
-								<img class="img-responsive" ng-if="module.sizes.original" src="{{module.sizes.original}}" />
-							</div>
-							<div ng-if="module.embed" ng-bind-html="module.embed | html" class="center"></div>
-						</div>
-						<ul ng-show="commentsProject.comments != ''" id="collection" class='collection with-header'>
-							<li class="collection-header"><h5>The last 10 comments on this project</h5></li>
-							<li class="collection-item avatar" ng-repeat="comments in commentsProject.comments | limitTo:10">
-								<img src="{{comments.user.images[50]}}" alt="" class="circle">
-								<span class="title" ng-class="{myself: data.user.id == comments.user.id}">{{comments.user.display_name}} | {{comments.user.occupation}}</span>
-								<p>{{comments.comment}}</p>
-								<a href="{{comments.user.url}}" title="View profile on Behance" target="_blank" class="secondary-content"><i class="icon-link-ext"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="modal-footer">
-				<a class="modal-action modal-close waves-effect waves-green btn-flat">close</a>
-			</div>
-		</div>
-
 
 	</main>
 
